@@ -10,7 +10,7 @@ abstract class RouteBase {
 }
 
 enum RouteMapper implements RouteBase {
-  dashboard(label: 'Dashboard', path: '/', icon: RadixIcons.component2),
+  dashboard(label: 'Dashboard', path: '/', icon: RadixIcons.dashboard),
   usersOverview(
       label: 'Utilisateurs',
       path: '/accounts/users/overview',
@@ -24,7 +24,9 @@ enum RouteMapper implements RouteBase {
   structuresOverview(
       label: 'Structures', path: '/structures', icon: RadixIcons.home),
   featuresOverview(
-      label: 'Features', path: '/features', icon: RadixIcons.rocket);
+      label: 'Features', path: '/features', icon: RadixIcons.rocket),
+  subscriptionOverview(
+      label: 'Souscriptions', path: '/subscriptions', icon: RadixIcons.lightningBolt);
 
   @override
   final String label;
@@ -48,7 +50,8 @@ final List<RouteBase> accountLinks = [
 final List<RouteBase> platformLinks = [
   RouteMapper.organizationOverview,
   RouteMapper.structuresOverview,
-  RouteMapper.featuresOverview
+  RouteMapper.featuresOverview,
+  RouteMapper.subscriptionOverview
 ];
 
 final routerLinks = [...defaultLinks, ...accountLinks, ...platformLinks];

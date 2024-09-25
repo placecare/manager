@@ -34,6 +34,17 @@ final class ApplicationLayout extends StatelessWidget {
                 color: Colors.blue.shade200,
               ),
               const Expanded(child: NavigationLinks()),
+              Padding(
+                padding: const EdgeInsets.all(24),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(minWidth: double.infinity),
+                  child: PrimaryButton(
+                    onPressed: () {},
+                    leading: const Icon(RadixIcons.exit),
+                    child: const Text('Déconnexion'),
+                  ),
+                ),
+              )
             ],
           ),
         ),
