@@ -35,6 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  go_router: ^14.2.8
+  flutter_appauth: ^7.0.0
+  shadcn_flutter: ^0.0.20
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +59,50 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  fonts:
+    - family: GeistSans
+      fonts:
+        - asset: packages/shadcn_flutter/fonts/Geist-Black.otf
+          weight: 800
+        - asset: packages/shadcn_flutter/fonts/Geist-Bold.otf
+          weight: 700
+        - asset: packages/shadcn_flutter/fonts/Geist-Light.otf
+          weight: 300
+        - asset: packages/shadcn_flutter/fonts/Geist-Medium.otf
+          weight: 500
+        - asset: packages/shadcn_flutter/fonts/Geist-SemiBold.otf
+          weight: 600
+        - asset: packages/shadcn_flutter/fonts/Geist-Thin.otf
+          weight: 100
+        - asset: packages/shadcn_flutter/fonts/Geist-UltraBlack.otf
+          weight: 900
+        - asset: packages/shadcn_flutter/fonts/Geist-UltraLight.otf
+          weight: 200
+        - asset: packages/shadcn_flutter/fonts/Geist-Regular.otf
+          weight: 400
+    - family: GeistMono
+      fonts:
+        - asset: packages/shadcn_flutter/fonts/GeistMono-Black.otf
+          weight: 800
+        - asset: packages/shadcn_flutter/fonts/GeistMono-Bold.otf
+          weight: 700
+        - asset: packages/shadcn_flutter/fonts/GeistMono-Light.otf
+          weight: 300
+        - asset: packages/shadcn_flutter/fonts/GeistMono-Medium.otf
+          weight: 500
+        - asset: packages/shadcn_flutter/fonts/GeistMono-Regular.otf
+          weight: 400
+        - asset: packages/shadcn_flutter/fonts/GeistMono-SemiBold.otf
+          weight: 600
+        - asset: packages/shadcn_flutter/fonts/GeistMono-Thin.otf
+          weight: 100
+        - asset: packages/shadcn_flutter/fonts/GeistMono-UltraBlack.otf
+          weight: 900
+        - asset: packages/shadcn_flutter/fonts/GeistMono-UltraLight.otf
+          weight: 200
+    - family: RadixIcons
+      fonts:
+        - asset: packages/shadcn_flutter/icons/RadixIcons.otf
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
