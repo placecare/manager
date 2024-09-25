@@ -38,6 +38,8 @@ dependencies:
   go_router: ^14.2.8
   flutter_appauth: ^7.0.0
   shadcn_flutter: ^0.0.20
+  url_strategy: ^0.3.0
+  flutter_hooks: ^0.20.5
 
 dev_dependencies:
   flutter_test:
